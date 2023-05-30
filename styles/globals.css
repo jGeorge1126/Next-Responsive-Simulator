@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('./Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
+  /* add additional font weights and styles as necessary */
+}
+
+body {
+  font-family: 'Inter', sans-serif;  
+}
+
+.calc {
+ color: red;
+  font-family: 'Work Sans', sans-serif !important;
+}
+.navigation:hover .navigation-item {
+  display: block !important;
+}
+th, td{
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
